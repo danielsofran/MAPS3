@@ -1,5 +1,6 @@
 package models;
 
+import java.util.Map;
 import java.util.Objects;
 
 public class Student {
@@ -25,6 +26,10 @@ public class Student {
 
     public void setMedie(float medie) {
         this.medie = medie;
+    }
+
+    public Integer getMedieRotunjita(){
+        return Math.round(medie);
     }
 
     @Override
